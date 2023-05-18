@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Background Removal</title>
+</head>
+<body>
+    {% if error %}
+        <p>{{ error }}</p>
+    {% endif %}
+    <form action="/remove_background" method="post" enctype="multipart/form-data">
+        <input type="file" name="image">
+        <input type="submit" value="Remove Background">
+    </form>
+</body>
+</html>
